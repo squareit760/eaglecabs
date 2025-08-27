@@ -92,7 +92,7 @@ const ContactUs = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-yellow-500 text-white font-semibold py-3 rounded-lg hover:bg-yellow-600 transition"
+                className="w-full bg-gray-800 text-white font-semibold py-3 rounded-lg hover:bg-yellow-600 transition"
               >
                 Send Message
               </button>

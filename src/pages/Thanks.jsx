@@ -18,13 +18,13 @@ const ThankYou = () => {
           <a
             href="/"
             rel="noopener noreferrer"
-            className="inline-block mt-6 px-6 py-3 text-white font-bold rounded-lg bg-[#c92d12] shadow-md hover:bg-red-700 transition-all duration-300"
+            className="inline-block mt-6 px-6 py-3 text-white font-bold rounded-lg bg-blue-800 shadow-md hover:bg-blue-300 transition-all duration-300"
           >
             Back To Home Page
           </a>
 
           <div className="mt-6 space-y-4">
-            <div className="bg-yellow-400 border-2 border-yellow-500 rounded-md py-3 px-4 text-lg font-semibold">
+            <div className="bg-yellow-500 border-2 border-yellow-500 rounded-md py-3 px-4 text-lg font-semibold">
               Contact No:{" "}
               <a
                 href="tel:+918808698649"
@@ -35,7 +35,7 @@ const ThankYou = () => {
               </a>
             </div>
 
-            <div className="bg-green-600  border-2 border-green-700 rounded-md py-3 px-4 text-lg font-semibold text-white">
+            <div className="bg-gray-500  border-2 border-gray-500 rounded-md py-3 px-4 text-lg font-semibold text-white">
               Email ID:{" "}
               <a
                 href="mailto:mohanyadav8808@gmail.com"

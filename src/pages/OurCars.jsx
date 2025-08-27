@@ -4,54 +4,54 @@ import CarRentalService from "../components/OurCars";
 const OurCars = () => {
   const cars = [
     {
-      name: "Sedan",
+      name: "HYUNDAI VERNA",
       desc: "Comfortable rides for city and outstation travel.",
-      img: "/images/car1.png",
+      img: "/images/Hyundai.webp",
     },
     {
-      name: "SUV",
+      name: " INNOVA HYCROSS",
       desc: "Spacious SUVs for family and group travel.",
-      img: "/images/car2.png",
+      img: "/images/SUV.png",
     },
     {
-      name: "Luxury",
+      name: "BMW GRAN TURISMO",
       desc: "Premium cars for weddings, events, and business trips.",
-      img: "/images/car3.jpg",
+      img: "/images/BMW.webp",
     },
     {
-      name: "Tempo Traveller",
+      name: "HYUNDAI AURA",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car4.jpg",
+      img: "/images/HYUNDAIAURA.png",
     },
     {
-      name: "Tempo Traveller",
+      name: "AUDI A4",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car5.jpg",
+      img: "/images/AUDIA4.png",
     },
     {
-      name: "Tempo Traveller",
+      name: "MERCEDES C CLASS",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car6.png",
+      img: "/images/MERCEDES.webp",
     },
     {
-      name: "Tempo Traveller",
+      name: "TOYOTA FORTUNER LEGENDER",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car7.jpg",
+      img: "/images/TOYOTA.png",
     },
     {
-      name: "Tempo Traveller",
+      name: "TOYOTA INNOVA CRYSTA",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car8.jpg",
+      img: "/images/TOYOTAINNOVA.png",
     },
     {
-      name: "Tempo Traveller",
+      name: "Urbania Tempo Traveller 17 seater",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car9.jpg",
+      img: "/images/Urbania.png",
     },
     {
-      name: "Tempo Traveller",
+      name: "Tempo Traveller 9,12,15,17,26 Seater",
       desc: "Perfect for group tours and long journeys.",
-      img: "/images/car10.jpg",
+      img: "/images/Tempo.jpg",
     },
   ];
 

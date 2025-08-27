@@ -15,19 +15,19 @@ const Home = () => {
   const navigate = useNavigate();
   const cars = [
     {
-      name: "Sedan",
+      name: "HYUNDAI VERNA",
       desc: "Comfortable rides for city and outstation travel.",
-      img: "/images/car1.png",
+      img: "/images/Hyundai.webp",
     },
     {
-      name: "SUV",
+      name: "INNOVA HYCROSS",
       desc: "Spacious SUVs for family and group travel.",
-      img: "/images/car2.png",
+      img: "/images/SUV.png",
     },
     {
-      name: "Luxury",
+      name: "BMW GRAN TURISMO",
       desc: "Premium cars for weddings, events, and business trips.",
-      img: "/images/car3.jpg",
+      img: "/images/BMW.webp",
     }
     
   ];

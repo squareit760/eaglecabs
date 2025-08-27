@@ -2,12 +2,12 @@ import React from "react";
 
 export default function CarRentalService({ cars }) {
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="min-h-screen bg-gray-200 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
-            RENT A CAR IN LUCKNOW WITH DRIVER – MD TRAVEL'S PREMIUM CAR
+            RENT A CAR IN LUCKNOW WITH DRIVER – EAGLECAB'S PREMIUM CAR
             <br />
             BOOKING SERVICE
           </h1>
@@ -25,11 +25,11 @@ export default function CarRentalService({ cars }) {
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
             >
               {/* Car Image */}
-              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 p-8 h-80 flex items-center justify-center">
+              <div className="relative bg-white p-3 h-80 w-full flex items-center justify-center">
                 <img
                   src={car.img}
                   alt={car.alt}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
 

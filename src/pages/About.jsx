@@ -65,15 +65,15 @@ export default function AboutPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-white py-16">
+      <div className="bg-gray-800 py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-white font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -169,7 +169,8 @@ export default function AboutPage() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M12 6v6l4 2m6-8a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 
+                9 9 0 0118 0z"
                     />
                   </svg>
                 </div>

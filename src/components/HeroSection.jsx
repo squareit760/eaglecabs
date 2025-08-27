@@ -88,7 +88,7 @@ const Hero = () => {
         <div className="flex justify-center">
           <form
             onSubmit={handleSubmit}
-            className="flex gap-4 bg-white rounded-xl shadow-lg p-5 text-gray-800"
+            className="lg:flex hidden gap-4 bg-white rounded-xl shadow-lg p-5 text-gray-800"
           >
             <input
               type="text"

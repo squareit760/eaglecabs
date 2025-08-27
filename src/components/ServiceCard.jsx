@@ -1,5 +1,5 @@
 import React from "react";
-import { Plane, MapPin, Car, Briefcase } from "lucide-react"; // ✅ Icons
+import { Plane, MapPin, Car, Briefcase, Heart } from "lucide-react"; // ✅ Added Heart icon
 
 const Services = () => {
   const services = [
@@ -23,6 +23,11 @@ const Services = () => {
       title: "Corporate Travel",
       desc: "Professional and punctual travel solutions for business needs.",
     },
+    {
+      icon: <Heart className="h-12 w-12 text-[#0B2545]" />, // 💍 Wedding Service
+      title: "Wedding Car Booking",
+      desc: "Luxury cars and premium services for your special wedding day.",
+    },
   ];
 
   return (
@@ -34,7 +39,7 @@ const Services = () => {
         </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {services.map((service, index) => (
             <div
               key={index}

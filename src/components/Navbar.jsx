@@ -11,7 +11,7 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="EagleCabs Logo" className="h-10 w-auto" /> 
+          <img src={logo} alt="EagleCabs Logo" className="h-10 lg:w-auto w-[8vw]" /> 
           <span className="font-extrabold text-xl text-[#0B2545]">EAGLECABS</span>
         </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
             href="/services"
             className="bg-[#0B2545] text-white px-5 py-2 rounded-full shadow-md hover:bg-[#163968] transition"
           >
-            Book Now
+             +91 7379034001
           </a>
         </div>
 
@@ -48,12 +48,12 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg">
           <nav className="flex flex-col space-y-4 p-5 text-gray-700 font-medium">
             <a href="/" className="hover:text-[#0B2545]">Home</a>
-            <a href="/about" className="hover:text-[#0B2545]">About</a>
-            <a href="/services" className="hover:text-[#0B2545]">Services</a>
-            <a href="/pricing" className="hover:text-[#0B2545]">Pricing</a>
-            <a href="/contact" className="hover:text-[#0B2545]">Contact</a>
+          <a href="/about" className="hover:text-[#0B2545]">About</a>
+          <a href="/services" className="hover:text-[#0B2545]">Services</a>
+          <a href="/our-cars" className="hover:text-[#0B2545]">Our Cars</a>
+          <a href="/contact-us" className="hover:text-[#0B2545]">Contact</a>
             <a
-              href="/services"
+              href="/contact-us"
               className="bg-[#0B2545] text-white px-5 py-2 rounded-full text-center shadow-md hover:bg-[#163968] transition"
             >
               Book Now
