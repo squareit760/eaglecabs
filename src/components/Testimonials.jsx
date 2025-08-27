@@ -59,11 +59,11 @@ const TestimonialsSlider = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900 relative overflow-hidden min-h-[60vh]">
+    <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900 relative overflow-hidden min-h-[50vh] sm:min-h-[55vh] lg:min-h-[60vh]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="grid grid-cols-8 gap-4 h-full opacity-20">
+          <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-2 sm:gap-4 h-full opacity-20">
             {Array.from({ length: 64 }).map((_, i) => (
               <div key={i} className="border border-white/10 rounded"></div>
             ))}
@@ -71,52 +71,52 @@ const TestimonialsSlider = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col justify-center">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4 px-2">
             What Our <span className="text-yellow-400">Customers</span> Say
           </h2>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-300 text-sm sm:text-base lg:text-lg max-w-xs sm:max-w-lg lg:max-w-2xl mx-auto px-4">
             Don't just take our word for it. Here's what our valued customers have to say.
           </p>
         </div>
 
         {/* Testimonials Slider */}
         <div 
-          className="max-w-5xl mx-auto relative"
+          className="max-w-xs sm:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto relative"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className="overflow-hidden rounded-2xl">
+          <div className="overflow-hidden rounded-xl sm:rounded-2xl">
             <div 
               className="flex transition-transform duration-700 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {reviews.map((review, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-4">
-                  <div className="bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 p-8 md:p-10 mx-auto max-w-4xl transition-all duration-500 hover:bg-white/15 hover:border-white/30">
+                <div key={index} className="w-full flex-shrink-0 px-2 sm:px-4">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl border border-white/20 p-4 sm:p-6 md:p-8 lg:p-10 mx-auto max-w-full transition-all duration-500 hover:bg-white/15 hover:border-white/30">
                     
                     {/* Quote Icon */}
-                    <div className="flex justify-center mb-6">
-                      <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                        <svg className="w-6 h-6 text-slate-800" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="flex justify-center mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-slate-800" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                         </svg>
                       </div>
                     </div>
 
                     {/* Review Text */}
-                    <blockquote className="text-white text-lg md:text-xl leading-relaxed text-center mb-6 font-light">
+                    <blockquote className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center mb-4 sm:mb-6 font-light px-2">
                       "{review.review}"
                     </blockquote>
 
                     {/* Rating */}
-                    <div className="flex justify-center mb-6">
+                    <div className="flex justify-center mb-4 sm:mb-6">
                       {Array.from({ length: review.rating }, (_, i) => (
                         <svg 
                           key={i} 
-                          className="w-5 h-5 text-yellow-400 mx-1" 
+                          className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400 mx-0.5 sm:mx-1" 
                           fill="currentColor" 
                           viewBox="0 0 20 20"
                         >
@@ -127,13 +127,13 @@ const TestimonialsSlider = () => {
 
                     {/* Customer Info */}
                     <div className="flex items-center justify-center">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center text-slate-800 text-lg font-bold">
+                      <div className="flex items-center space-x-3 sm:space-x-4">
+                        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400 rounded-full flex items-center justify-center text-slate-800 text-base sm:text-lg font-bold">
                           {review.image}
                         </div>
                         <div className="text-left">
-                          <h3 className="text-lg font-bold text-white mb-1">{review.name}</h3>
-                          <p className="text-slate-300 text-sm">{review.role}</p>
+                          <h3 className="text-base sm:text-lg font-bold text-white mb-1">{review.name}</h3>
+                          <p className="text-slate-300 text-xs sm:text-sm">{review.role}</p>
                         </div>
                       </div>
                     </div>
@@ -143,34 +143,34 @@ const TestimonialsSlider = () => {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - Hidden on very small screens */}
           <button 
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
+            className="hidden sm:flex absolute left-2 lg:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
           >
-            <svg className="w-5 h-5 text-white group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <button 
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
+            className="hidden sm:flex absolute right-2 lg:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
           >
-            <svg className="w-5 h-5 text-white group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
 
           {/* Pagination Dots */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
             {reviews.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`transition-all duration-300 rounded-full ${
                   currentSlide === index
-                    ? 'w-8 h-2 bg-yellow-400'
+                    ? 'w-6 sm:w-8 h-2 bg-yellow-400'
                     : 'w-2 h-2 bg-white/40 hover:bg-white/60 hover:scale-125'
                 }`}
               />
@@ -179,22 +179,22 @@ const TestimonialsSlider = () => {
         </div>
 
         {/* Statistics Row */}
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 mt-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-16 mt-8 sm:mt-10 lg:mt-12 max-w-full sm:max-w-3xl lg:max-w-5xl mx-auto px-4">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">50K+</div>
-            <div className="text-slate-300 text-sm md:text-base">Happy Customers</div>
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-yellow-400 mb-1">50K+</div>
+            <div className="text-slate-300 text-xs sm:text-sm md:text-base">Happy Customers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">4.9</div>
-            <div className="text-slate-300 text-sm md:text-base">Average Rating</div>
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-yellow-400 mb-1">4.9</div>
+            <div className="text-slate-300 text-xs sm:text-sm md:text-base">Average Rating</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">24/7</div>
-            <div className="text-slate-300 text-sm md:text-base">Service Available</div>
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-yellow-400 mb-1">24/7</div>
+            <div className="text-slate-300 text-xs sm:text-sm md:text-base">Service Available</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-yellow-400 mb-1">100%</div>
-            <div className="text-slate-300 text-sm md:text-base">Satisfaction</div>
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-yellow-400 mb-1">100%</div>
+            <div className="text-slate-300 text-xs sm:text-sm md:text-base">Satisfaction</div>
           </div>
         </div>
       </div>

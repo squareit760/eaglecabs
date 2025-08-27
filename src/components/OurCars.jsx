@@ -12,7 +12,7 @@ export default function CarRentalService({ cars }) {
             BOOKING SERVICE
           </h1>
           <p className="text-lg text-gray-600 mx-auto">
-            Rent a car in Lucknow with MD Travel – your trusted car rental
+            Rent a car in Lucknow with EAGLECABS – your trusted car rental
             service offering fast, reliable car booking service in Lucknow.
           </p>
         </div>
