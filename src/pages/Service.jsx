@@ -5,9 +5,15 @@ import {
   CreditCard, Headphones, Award, Zap,
   Mail
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function ServicesPage() {
   const [activeTab, setActiveTab] = useState('all');
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact-us")
+  }
 
   const serviceCategories = [
     { id: 'all', label: 'All Services', icon: <Car className="h-5 w-5" /> },
@@ -295,7 +301,7 @@ export default function ServicesPage() {
                     ))}
                   </div>
 
-                  <button className="w-full bg-gradient-to-r from-gray-800 to-blue-700 hover:from-gray-700 hover:to-gray-800 text-white font-bold py-4 px-6 rounded-lg transition-all transform group-hover:scale-105">
+                  <button onClick={handleClick} className="w-full bg-gradient-to-r from-gray-800 to-blue-700 hover:from-gray-700 hover:to-gray-800 text-white font-bold py-4 px-6 rounded-lg transition-all transform group-hover:scale-105">
                     Book This Service
                   </button>
                 </div>
@@ -343,9 +349,9 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center relative">
+              <div key={index} className="text-center relative shadow-2xl rounded-2xl p-9 lg:hover:scale-110 transition-all duration-100 cursor-pointer">
                 <div className="bg-gradient-to-r from-blue-900 to-blue-900 text-white w-16 h-16 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6 shadow-lg">
                   {step.number}
                 </div>
@@ -441,7 +447,7 @@ export default function ServicesPage() {
               </a>
             </div>
           </div>
-          <button className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+          <button onClick={() => navigate("/contact-us")} className="mt-8 cursor-pointer bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
             Book Now
           </button>
         </div>

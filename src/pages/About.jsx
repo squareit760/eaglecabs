@@ -1,7 +1,11 @@
 import React from "react";
 import { Users, Clock, Shield, Star, MapPin, Phone, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutPage() {
+  const navigate = useNavigate();
+
+
   const stats = [
     { number: "10+", label: "Years Experience" },
     { number: "50K+", label: "Happy Customers" },
@@ -248,7 +252,7 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-          <button className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+          <button onClick={()=> navigate("/contact-us")} className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
             Book Now
           </button>
         </div>
