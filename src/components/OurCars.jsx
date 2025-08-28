@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CarRentalService({ cars }) {
+  const navigate = useNavigate(); 
+  const handleClick = () =>{
+    navigate("/contact-us")
+  }
   return (
     <div className="min-h-screen bg-gray-200 py-12 px-4">
       <div className="max-w-7xl mx-auto">
@@ -38,7 +43,7 @@ export default function CarRentalService({ cars }) {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
                   {car.name}
                 </h3>
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-full transition-colors duration-200 transform hover:scale-105 shadow-md">
+                <button onClick={handleClick}  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-full transition-colors duration-200 transform hover:scale-105 shadow-md">
                   BOOK NOW
                 </button>
               </div>

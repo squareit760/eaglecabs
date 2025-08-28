@@ -1,3 +1,4 @@
+import { Mail, Phone } from "lucide-react";
 import React from "react";
 import {
   FaFacebookF,
@@ -5,6 +6,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -35,9 +37,26 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
           <ul className="space-y-2 text-sm">
-            <li>📍 Lucknow, Uttar Pradesh</li>
-            <li>📞 +91 98765 43210</li>
-            <li>✉️ support@eaglecabs.com</li>
+            <div className="flex gap-2">
+            <FaLocationDot className="h-5 w-8" />
+            
+            <li>Shop No.225, Sector-D, 2, Shopping Square Rd, Golf City, Bagiamau, Lucknow, Uttar Pradesh 226030</li>
+            </div>
+            <div className="flex gap-2">
+              <Phone className="h-5 w-5" />
+            <a href="+918881059997">
+              <li> +918881059997</li>
+            </a>
+            </div>
+             
+             <div className="flex gap-2">
+              <Mail className="h-5 w-5" />
+              
+              <a href="mailto:greeneaglecabs@gmail.com">
+               <li>
+              greeneaglecabs@gmail.com</li>
+              </a>
+             </div>
           </ul>
         </div>
 

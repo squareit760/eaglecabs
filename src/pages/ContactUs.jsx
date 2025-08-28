@@ -110,16 +110,13 @@ const ContactUs = () => {
               </p>
               <div className="mt-4 space-y-2">
                 <p className="text-gray-700">
-                  📞 <span className="font-semibold">+91 98765 43210</span>
-                </p>
-                <p className="text-gray-700">
-                  📞 <span className="font-semibold">+91 91234 56789</span>
+                  📞 <span className="font-semibold">+91 88810 59997</span>
                 </p>
                 <p className="text-gray-700">
                   ✉️ <span className="font-semibold">support@eaglecabs.com</span>
                 </p>
                 <p className="text-gray-700">
-                  📍 123 Main Street, Lucknow, Uttar Pradesh, India
+                  📍 Shop No.225, Sector-D, 2, Shopping Square Rd, Golf City, Bagiamau, Lucknow, Uttar Pradesh 226030
                 </p>
               </div>
             </div>

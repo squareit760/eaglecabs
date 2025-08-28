@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { 
   Car, Clock, MapPin, Users, Shield, Star, Phone, CheckCircle, 
   ArrowRight, Calendar, Briefcase, Heart, Plane, Navigation,
-  CreditCard, Headphones, Award, Zap
+  CreditCard, Headphones, Award, Zap,
+  Mail
 } from 'lucide-react';
 
 export default function ServicesPage() {
@@ -176,47 +177,50 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
        {/* Hero Section */}
-      <div className="relative bg-cover bg-center bg-no-repeat min-h-[600px] flex items-center" style={{backgroundImage: 'url(/images/service.jpg)'}}>
-        {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
-        <div className="relative container mx-auto px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 mb-6">
-              Our <span className="text-yellow-400">Services</span>
-            </h1>
-            <p className="text-xl sm:text-2xl text-gray-800 mb-8 leading-relaxed">
-              Professional transportation solutions designed for every journey, every occasion, every need.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105">
-                Book Your Ride
-              </button>
-              {/* <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-4 px-8 rounded-lg text-lg transition-all">
-                View Pricing
-              </button> */}
+
+      <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
+        <img 
+          src="/images/service.jpg" 
+          alt="EagleCabs - Professional Transportation Services"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center text-white">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+               Our <span className="text-yellow-400">Services</span>
+              </h1>
+              <p className="lg:text-xl text-md mb-8 text-white">
+                Your trusted transportation partner since 2014
+              </p>
+              <p className="lg:text-lg text-md text-white max-w-2xl mx-auto">
+                We soar above the competition to deliver safe, reliable, and comfortable rides across the city and beyond.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       {/* Quick Stats */}
-      <div className="bg-gray-800 py-12 shadow-lg ">
+      <div className="bg-gray-800 lg:py-12 py-4 shadow-lg ">
         <div className="container mx-auto px-4 ">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 text-center ">
+          <div className="grid grid-cols-3 lg:grid-cols-3 gap-8 text-center ">
             <div>
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">50K+</div>
-              <div className="text-white">Happy Customers</div>
+              <div className="text-2xl lg:text-4xl font-bold text-white mb-2">50K+</div>
+              <div className="text-white lg:text-lg text-sm">Happy Customers</div>
             </div>
             <div>
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">24/7</div>
-              <div className="text-white">Service Available</div>
+              <div className="text-2xl lg:text-4xl font-bold text-white mb-2">24/7</div>
+              <div className="text-white lg:text-lg text-sm">Service Available</div>
             </div>
             {/* <div>
               <div className="text-3xl lg:text-4xl font-bold text-blue-900 mb-2">5 Min</div>
               <div className="text-gray-600">Average Pickup</div>
             </div> */}
             <div>
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">4.9★</div>
-              <div className="text-white">Customer Rating</div>
+              <div className="text-2xl lg:text-4xl font-bold text-white mb-2">4.9★</div>
+              <div className="text-white lg:text-lg text-sm">Customer Rating</div>
             </div>
           </div>
         </div>
@@ -235,22 +239,27 @@ export default function ServicesPage() {
           </div>
 
           {/* Category Tabs */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {serviceCategories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveTab(category.id)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${
-                  activeTab === category.id
-                    ? 'bg-gray-800 text-white shadow-lg'
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-                }`}
-              >
-                {category.icon}
-                {category.label}
-              </button>
-            ))}
-          </div>
+          <div className="flex flex-wrap md:flex-nowrap justify-center gap-2 md:gap-4 mb-12 overflow-x-auto md:overflow-visible">
+  {serviceCategories.map((category) => (
+    <button
+      key={category.id}
+      onClick={() => setActiveTab(category.id)}
+      className={`flex items-center gap-1 md:gap-2 
+                  px-3 py-2 md:px-6 md:py-3 
+                  rounded-full font-medium text-sm md:text-base
+                  transition-all whitespace-nowrap
+                  ${
+                    activeTab === category.id
+                      ? "bg-gray-800 text-white shadow-lg"
+                      : "bg-white text-gray-600 hover:bg-gray-100 border border-gray-200"
+                  }`}
+    >
+      {category.icon}
+      {category.label}
+    </button>
+  ))}
+</div>
+
 
           {/* Services Grid */}
           <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -300,7 +309,7 @@ export default function ServicesPage() {
       <div className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="lg:text-4xl text-3xl sm:text-5xl font-bold text-gray-900 mb-6">
               Why Choose <span className="text-yellow-500">EagleCabs?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -311,7 +320,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
             {advantages.map((advantage, index) => (
               <div key={index} className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all">
-                <div className="text-gray-800 mb-6 flex justify-center">
+                <div className="text-yellow-300 mb-6 flex justify-center">
                   {advantage.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">{advantage.title}</h3>
@@ -410,36 +419,31 @@ export default function ServicesPage() {
         </div>
       </div> */}
 
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-800 to-gray-800 text-white py-16">
+      {/* Contact CTA */}
+      <div className="bg-gray-800 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Ready to Experience Excellence?
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            Ready to Experience the EagleCabs Difference?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join thousands of satisfied customers who trust EagleCabs for their transportation needs. Book your ride today!
+          <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+            Book your ride today and discover why thousands of customers trust
+            us for their transportation needs.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105">
-              Book Your Ride Now
-            </button>
-            
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                <span className="text-lg">+1 (555) 123-EAGLE</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CreditCard className="h-5 w-5" />
-                <span className="text-lg">All Cards Accepted</span>
-              </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex items-center gap-2">
+              <Phone className="h-5 w-5" />
+              <span className="text-lg">+91 88810 59997</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="h-5 w-5" />
+              <a href="mailto:greeneaglecabs@gmail.com">
+              <span className="text-lg">greeneaglecabs@gmail.com</span>
+              </a>
             </div>
           </div>
-
-          <div className="text-blue-200">
-            <p>Available 24/7 • Instant Confirmation • Professional Service</p>
-          </div>
+          <button className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+            Book Now
+          </button>
         </div>
       </div>
     </div>

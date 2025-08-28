@@ -27,10 +27,10 @@ const Navbar = () => {
         {/* Book Now Button (Desktop) */}
         <div className="hidden md:block">
           <a
-            href="/services"
+            href="tel:+918881059997"
             className="bg-[#0B2545] text-white px-5 py-2 rounded-full shadow-md hover:bg-[#163968] transition"
           >
-             +91 7379034001
+              +91 88810 59997
           </a>
         </div>
 

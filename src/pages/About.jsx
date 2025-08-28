@@ -35,6 +35,7 @@ export default function AboutPage() {
         "Consistently rated 5 stars by customers for reliability and excellence.",
     },
   ];
+  
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -238,11 +239,13 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
-              <span className="text-lg">+1 (555) 123-EAGLE</span>
+              <span className="text-lg">+91 88810 59997</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-5 w-5" />
-              <span className="text-lg">info@eaglecabs.com</span>
+              <a href="mailto:greeneaglecabs@gmail.com">
+              <span className="text-lg">greeneaglecabs@gmail.com</span>
+              </a>
             </div>
           </div>
           <button className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">

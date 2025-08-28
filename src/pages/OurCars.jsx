@@ -58,15 +58,30 @@ const OurCars = () => {
   return (
     <div className="bg-white">
       {/* Banner Section with car.jpg */}
-      <div
-        className="relative bg-cover bg-center h-64 md:h-130 flex items-center justify-center "
-        style={{ backgroundImage: "url('/images/car.jpg')" }}
-      >
-        <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
-          Our Cars
-        </h1>
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80"></div>
 
+      <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
+        <img 
+          src="/images/about.jpg" 
+          alt="EagleCabs - Professional Transportation Services"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-gray-800/40"></div>
+
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center text-white">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                Our  <span className="text-yellow-400">Cars</span>
+              </h1>
+              <p className="text-xl sm:text-2xl mb-8 text-white">
+                Your trusted transportation partner since 2014
+              </p>
+              <p className="text-lg text-white max-w-2xl mx-auto">
+                We soar above the competition to deliver safe, reliable, and comfortable rides across the city and beyond.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Cars Section */}

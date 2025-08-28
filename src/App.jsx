@@ -10,11 +10,13 @@ import ThankYou from "./pages/Thanks";
 import AdminTable from "./pages/dashboard";
 import Login from "./pages/login";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Home />} />

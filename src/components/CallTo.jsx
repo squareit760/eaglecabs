@@ -11,7 +11,7 @@ const CTASection = () => {
           Book your cab now and enjoy a safe, reliable, and comfortable journey.
         </p>
         <a
-          href="/services" // 👉 link to Booking/Services page
+          href="/services" //  link to Booking/Services page
           className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold px-8 py-4 rounded-full shadow-lg transition-all duration-300"
         >
           Book Your Cab Now →

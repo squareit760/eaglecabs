@@ -63,28 +63,26 @@ const Hero = () => {
     }
   };
   return (
-    <section
-      className="relative h-[90vh] flex items-center justify-center text-white"
-      style={{
-        backgroundImage: `url(${banner})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 w-full">
-        {/* Headline */}
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg text-gray-800">
+    <>
+    
+    <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
+        <img 
+          src={banner} 
+          alt="EagleCabs - Professional Transportation Services"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-gray-900/80"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="container mx-auto px-4">
+            <div className="text-center text-white">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg text-white">
           Book Your Ride Anytime, Anywhere with{" "}
           <span className="text-yellow-400">EagleCabs</span>
         </h1>
-
-        {/* Sub-text */}
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-gray-800">
+               <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-white">
           Reliable, Affordable, and 24/7 available cabs at your service.
         </p>
-
-        {/* Booking Form */}
+               {/* Booking Form */}
         <div className="flex justify-center">
           <form
             onSubmit={handleSubmit}
@@ -125,8 +123,12 @@ const Hero = () => {
             </button>
           </form>
         </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </>
+    
   );
 };
 
