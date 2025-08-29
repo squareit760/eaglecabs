@@ -58,10 +58,10 @@ export default function AboutPage() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
                 About <span className="text-yellow-400">EagleCabs</span>
               </h1>
-              <p className="text-xl sm:text-2xl mb-8 text-blue-100">
+              <p className="text-lg sm:text-2xl mb-8 text-blue-100">
                 Your trusted transportation partner since 2014
               </p>
-              <p className="text-lg text-blue-200 max-w-2xl mx-auto">
+              <p className="text-md text-blue-200 max-w-2xl mx-auto">
                 We soar above the competition to deliver safe, reliable, and comfortable rides across the city and beyond.
               </p>
             </div>
@@ -127,9 +127,9 @@ export default function AboutPage() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow"
+                className="text-center p-6 lg:shadow-none shadow-lg rounded-lg cursor-pointer hover:scale-110 hover:shadow-2xl transition-all duration-100"
               >
-                <div className="text-gray-800 mb-4 flex justify-center">
+                <div className="text-gray-800 mb-4  flex justify-center">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -160,7 +160,7 @@ export default function AboutPage() {
 
           <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
             {/* Mission Card */}
-            <div className="bg-white rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+            <div className="bg-white cursor-pointer rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 shadow-md">
                   <svg
@@ -192,7 +192,7 @@ export default function AboutPage() {
             </div>
 
             {/* Vision Card */}
-            <div className="bg-white rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+            <div className="bg-white cursor-pointer rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 shadow-md">
                   <svg
@@ -243,7 +243,9 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
+              <a href="tel:918881059997">
               <span className="text-lg">+91 88810 59997</span>
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-5 w-5" />
@@ -252,7 +254,7 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-          <button onClick={()=> navigate("/contact-us")} className="mt-8 bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+          <button onClick={()=> navigate("/contact-us")} className="mt-8 cursor-pointer bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-colors">
             Book Now
           </button>
         </div>

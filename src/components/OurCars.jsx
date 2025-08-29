@@ -43,7 +43,7 @@ export default function CarRentalService({ cars }) {
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
                   {car.name}
                 </h3>
-                <button onClick={handleClick}  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-full transition-colors duration-200 transform hover:scale-105 shadow-md">
+                <button onClick={handleClick}  className="bg-yellow-400 cursor-pointer hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-full transition-colors duration-200 transform hover:scale-105 shadow-md">
                   BOOK NOW
                 </button>
               </div>

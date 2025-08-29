@@ -92,7 +92,7 @@ const ContactUs = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-gray-800 text-white font-semibold py-3 rounded-lg hover:bg-yellow-600 transition"
+                className="w-full cursor-pointer bg-gray-800 text-white font-semibold py-3 rounded-lg hover:bg-yellow-600 transition"
               >
                 Send Message
               </button>
@@ -113,7 +113,7 @@ const ContactUs = () => {
                   📞 <span className="font-semibold">+91 88810 59997</span>
                 </p>
                 <p className="text-gray-700">
-                  ✉️ <span className="font-semibold">support@eaglecabs.com</span>
+                  ✉️ <span className="font-semibold">greeneaglecabs@gmail.com</span>
                 </p>
                 <p className="text-gray-700">
                   📍 Shop No.225, Sector-D, 2, Shopping Square Rd, Golf City, Bagiamau, Lucknow, Uttar Pradesh 226030

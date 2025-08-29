@@ -245,12 +245,12 @@ export default function ServicesPage() {
           </div>
 
           {/* Category Tabs */}
-          <div className="flex flex-wrap md:flex-nowrap justify-center gap-2 md:gap-4 mb-12 overflow-x-auto md:overflow-visible">
+          <div className="flex  flex-wrap md:flex-nowrap justify-center gap-2 md:gap-4 mb-12 overflow-x-auto md:overflow-visible">
   {serviceCategories.map((category) => (
     <button
       key={category.id}
       onClick={() => setActiveTab(category.id)}
-      className={`flex items-center gap-1 md:gap-2 
+      className={`flex items-center cursor-pointer gap-1 md:gap-2 
                   px-3 py-2 md:px-6 md:py-3 
                   rounded-full font-medium text-sm md:text-base
                   transition-all whitespace-nowrap
@@ -325,7 +325,7 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
             {advantages.map((advantage, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all">
+              <div key={index} className="bg-white cursor-pointer rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all">
                 <div className="text-yellow-300 mb-6 flex justify-center">
                   {advantage.icon}
                 </div>
@@ -438,7 +438,9 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-2">
               <Phone className="h-5 w-5" />
+              <a href="tel:918881059997">
               <span className="text-lg">+91 88810 59997</span>
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-5 w-5" />
