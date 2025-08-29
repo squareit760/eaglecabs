@@ -146,7 +146,7 @@ const TestimonialsSlider = () => {
           {/* Navigation Arrows - Hidden on very small screens */}
           <button 
             onClick={prevSlide}
-            className="hidden sm:flex absolute left-2 lg:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
+            className=" sm:flex absolute left-[-40px] lg:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
           >
             <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -155,7 +155,7 @@ const TestimonialsSlider = () => {
 
           <button 
             onClick={nextSlide}
-            className="hidden sm:flex absolute right-2 lg:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
+            className=" sm:flex absolute right-[-40px] lg:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 group z-10"
           >
             <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:text-yellow-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
