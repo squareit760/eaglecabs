@@ -70,15 +70,15 @@ export default function AboutPage() {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-gray-800 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="bg-gray-800 py-16 lg:flex hidden">
+        <div className="container mx-auto lg:px-4 px-5">
+          <div className="grid grid-cols-4 lg:grid-cols-4 lg:gap-8 gap-5">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">
+                <div className="lg:text-3xl text-lg sm:text-4xl font-bold text-white mb-2">
                   {stat.number}
                 </div>
-                <div className="text-white font-medium">{stat.label}</div>
+                <div className="text-white font-medium lg:text-xl text-lg ">{stat.label}</div>
               </div>
             ))}
           </div>

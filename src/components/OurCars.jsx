@@ -11,7 +11,7 @@ export default function CarRentalService({ cars }) {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
             RENT A CAR IN LUCKNOW WITH DRIVER – EAGLECAB'S PREMIUM CAR
             <br />
             BOOKING SERVICE
@@ -19,7 +19,7 @@ export default function CarRentalService({ cars }) {
           <p className="text-lg text-gray-600 mx-auto">
             Rent a car in Lucknow with EAGLECABS – your trusted car rental
             service offering fast, reliable car booking service in Lucknow.
-          </p>
+          </p>  
         </div>
 
         {/* Cars Grid */}
