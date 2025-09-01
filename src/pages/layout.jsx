@@ -3,12 +3,15 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
+import PopularRoutes from '../components/PopularRoutes';
 
 const MainLayout = () => {
   return (
     <>
     <Navbar />
     <Outlet />
+
+    <PopularRoutes />
     <Footer />
 
     {/* Floating CTA Buttons */}

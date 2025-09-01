@@ -10,6 +10,7 @@ import CallTo from '../components/CallTo';
 import Footer from '../components/Footer';
 import CarRentalService from '../components/OurCars';
 import { useNavigate } from 'react-router-dom';
+import LocationsSection from '../components/location';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -37,13 +38,14 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <WhyChooseUs />
-      <ServiceCard />
-      <HowItWorks />
       <CarRentalService cars={cars} />
       <div className='flex justify-center my-2'>
       <button onClick={handleClick} className=' py-2 px-4 rounded-4xl cursor-pointer bg-yellow-500 text-white'>View All</button>
       </div>
+      <WhyChooseUs />
+      <HowItWorks />
+      <LocationsSection />
+      <ServiceCard />
       <Testimonials />
       <CallTo />
 
