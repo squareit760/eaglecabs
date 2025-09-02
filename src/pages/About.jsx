@@ -44,7 +44,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      {/* Banner Section */}
+      
       <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
         <img 
           src="/images/about.jpg" 
@@ -90,7 +90,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
-              EagleCabs
+             About <span className=" text-yellow-500">EagleCabs</span>
             </h2>
             <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12">
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -118,10 +118,10 @@ export default function AboutPage() {
       </div>
 
       {/* Features Section */}
-      <div className="py-16 bg-white">
+      <div className="py-16 bg-gray-800">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
-            Why Choose EagleCabs?
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
+            Why Choose  <span className="text-yellow-500">EagleCabs?</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
@@ -129,13 +129,13 @@ export default function AboutPage() {
                 key={index}
                 className="text-center p-6 lg:shadow-none shadow-lg rounded-lg cursor-pointer hover:scale-110 hover:shadow-2xl transition-all duration-100"
               >
-                <div className="text-gray-800 mb-4  flex justify-center">
+                <div className="text-white mb-4  flex justify-center">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-white leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -231,12 +231,12 @@ export default function AboutPage() {
       </div>
 
       {/* Contact CTA */}
-      <div className="bg-gray-800 text-white py-16">
+      <div className="bg-blue-50 text-gray-800 py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Experience the EagleCabs Difference?
           </h2>
-          <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
             Book your ride today and discover why thousands of customers trust
             us for their transportation needs.
           </p>

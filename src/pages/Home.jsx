@@ -29,7 +29,22 @@ const Home = () => {
       name: "BMW GRAN TURISMO",
       desc: "Premium cars for weddings, events, and business trips.",
       img: "/images/BMW.webp",
-    }
+    },
+    {
+      name: "HYUNDAI AURA",
+      desc: "Perfect for group tours and long journeys.",
+      img: "/images/HYUNDAIAURA.png",
+    },
+    {
+      name: "AUDI A4",
+      desc: "Perfect for group tours and long journeys.",
+      img: "/images/AUDIA4.png",
+    },
+    {
+      name: "MERCEDES C CLASS",
+      desc: "Perfect for group tours and long journeys.",
+      img: "/images/MERCEDES.webp",
+    },
     
   ];
   const handleClick = () =>{

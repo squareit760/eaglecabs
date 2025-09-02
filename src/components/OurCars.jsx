@@ -12,7 +12,7 @@ export default function CarRentalService({ cars }) {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
-            RENT A CAR IN LUCKNOW WITH DRIVER – EAGLECAB'S PREMIUM CAR
+            RENT A CAR IN LUCKNOW WITH DRIVER <span className="text-yellow-500"> – EAGLECAB'S </span> PREMIUM CAR
             <br />
             BOOKING SERVICE
           </h1>

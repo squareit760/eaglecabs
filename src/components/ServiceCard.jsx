@@ -45,7 +45,7 @@ const Services = () => {
               key={index}
               className="bg-gray-50  rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-xl transition"
             >
-              <div className="mb-4 text-yellow-400">{service.icon}</div>
+              <div className="mb-4 text-gray-800">{service.icon}</div>
               <h3 className="text-xl font-semibold text-black mb-2">
                 {service.title}
               </h3>

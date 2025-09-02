@@ -1,5 +1,6 @@
 import React from "react";
 import CarRentalService from "../components/OurCars";
+import OurCarsWork from "../components/OurCarsWork";
 
 const OurCars = () => {
   const cars = [
@@ -87,10 +88,11 @@ const OurCars = () => {
       {/* Cars Section */}
       <section className="py-16 px-6 md:px-12 lg:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
-          Choose From Our <span className="text-yellow-500">Wide Fleet</span>
+          Choose Your Favorite Cars
         </h2>
 
         <CarRentalService cars={cars} />
+
 
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {cars.map((car, index) => (
@@ -113,6 +115,8 @@ const OurCars = () => {
           ))}
         </div> */}
       </section>
+        <OurCarsWork />
+
     </div>
   );
 };

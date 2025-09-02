@@ -64,10 +64,9 @@ const Hero = () => {
   };
   return (
     <>
-    
-    <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
-        <img 
-          src={banner} 
+      <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
+        <img
+          src={banner}
           alt="EagleCabs - Professional Transportation Services"
           className="w-full h-full object-cover"
         />
@@ -76,59 +75,58 @@ const Hero = () => {
           <div className="container mx-auto px-4">
             <div className="text-center text-white">
               <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg text-white">
-          Book Your Ride Anytime, Anywhere with{" "}
-          <span className="text-yellow-400">EagleCabs</span>
-        </h1>
-               <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-white">
-          Reliable, Affordable, and 24/7 available cabs at your service.
-        </p>
-               {/* Booking Form */}
-        <div className="flex justify-center">
-          <form
-            onSubmit={handleSubmit}
-            className="lg:flex hidden gap-4 bg-white rounded-xl shadow-lg p-5 text-gray-800"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={form.name}
-              onChange={handleChange}
-              required
-              className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={form.email}
-              onChange={handleChange}
-              required
-              className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            />
-            <input
-              type="tel"
-              name="mobile"
-              placeholder="Phone"
-              value={form.mobile}
-              onChange={handleChange}
-              required
-              className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            />
-            <button
-              type="submit"
-              className="bg-[#0B2545] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#163968] transition"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+                Book Your Ride Anytime, Anywhere with{" "}
+                <span className="text-yellow-400">EagleCabs</span>
+              </h1>
+              <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-white">
+                Reliable, Affordable, and 24/7 available cabs at your service.
+              </p>
+              {/* Booking Form */}
+              <div className="flex justify-center">
+                <form
+                  onSubmit={handleSubmit}
+                  className="lg:flex hidden gap-4 bg-white rounded-xl shadow-lg p-5 text-gray-800"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                    className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                    className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  />
+                  <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Phone"
+                    value={form.mobile}
+                    onChange={handleChange}
+                    required
+                    className="border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-[#0B2545] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#163968] transition"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </>
-    
   );
 };
 

@@ -40,8 +40,8 @@ const ContactUs = () => {
         className="relative bg-cover bg-center h-64 md:h-130 flex items-center justify-center"
         style={{ backgroundImage: "url('/images/contact.jpg')" }}
       >
-        <h1 className="relative text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
-          Contact Us
+        <h1 className="relative text-3xl md:text-5xl font-bold text-gray-800 drop-shadow-lg">
+          Contact <span className="text-white"> Us </span>
         </h1>
       </div>
 

@@ -17,11 +17,11 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-8 font-medium text-gray-700">
-          <a href="/" className="hover:text-[#0B2545]">Home</a>
-          <a href="/about" className="hover:text-[#0B2545]">About</a>
-          <a href="/services" className="hover:text-[#0B2545]">Services</a>
-          <a href="/our-cars" className="hover:text-[#0B2545]">Our Cars</a>
-          <a href="/contact-us" className="hover:text-[#0B2545]">Contact</a>
+          <a href="/" className="hover:text-yellow-500">Home</a>
+          <a href="/about" className="hover:text-yellow-500">About</a>
+          <a href="/our-cars" className="hover:text-yellow-500">Our Cars</a>
+          <a href="/services" className="hover:text-yellow-500">Services</a>
+          <a href="/contact-us" className="hover:text-yellow-500">Contact</a>
         </nav>
 
         {/* Book Now Button (Desktop) */}
@@ -49,8 +49,8 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-4 p-5 text-gray-700 font-medium">
             <a href="/" className="hover:text-[#0B2545]">Home</a>
           <a href="/about" className="hover:text-[#0B2545]">About</a>
-          <a href="/services" className="hover:text-[#0B2545]">Services</a>
           <a href="/our-cars" className="hover:text-[#0B2545]">Our Cars</a>
+          <a href="/services" className="hover:text-[#0B2545]">Services</a>
           <a href="/contact-us" className="hover:text-[#0B2545]">Contact</a>
             <a
               href="/contact-us"
