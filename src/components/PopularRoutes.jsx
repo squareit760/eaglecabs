@@ -65,7 +65,7 @@ export default function PopularRoutes() {
           {routes.map((route, index) => (
             <div
               key={index}
-              className="text-white hover:text-green-200 cursor-pointer transition-colors duration-200 py-2 px-2 w-full rounded hover:bg-green-700 hover:bg-opacity-30"
+              className="text-white hover:text-gray-800 cursor-pointer transition-colors duration-200 py-2 px-2 w-full rounded hover:bg-white hover:bg-opacity-30"
             >
               <span className="text-sm lg:text-sm font-medium">
                 {route}

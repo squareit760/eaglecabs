@@ -57,7 +57,7 @@ const OurCars = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-blue-50">
       {/* Banner Section with car.jpg */}
 
       <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
@@ -87,7 +87,7 @@ const OurCars = () => {
 
       {/* Cars Section */}
       <section className="py-16 px-6 md:px-12 lg:px-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center mb-12">
           Choose Your Favorite Cars
         </h2>
 

@@ -40,7 +40,8 @@ const ContactUs = () => {
         className="relative bg-cover bg-center h-64 md:h-130 flex items-center justify-center"
         style={{ backgroundImage: "url('/images/contact.jpg')" }}
       >
-        <h1 className="relative text-3xl md:text-5xl font-bold text-gray-800 drop-shadow-lg">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80"></div>
+        <h1 className="relative text-3xl md:text-5xl font-bold text-yellow-500 drop-shadow-lg">
           Contact <span className="text-white"> Us </span>
         </h1>
       </div>

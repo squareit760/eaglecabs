@@ -438,7 +438,7 @@ export default function ServicesPage() {
                 key={index}
                 className="bg-white cursor-pointer rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all"
               >
-                <div className="text-yellow-300 mb-6 flex justify-center">
+                <div className="text-gray-800 mb-6 flex justify-center">
                   {advantage.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">

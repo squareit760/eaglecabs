@@ -67,12 +67,12 @@ export default function OurCarsWork() {
 
                     {/* Icon */}
                     <div className="flex justify-center mb-6">
-                      <IconComponent size={48} className="text-gray-800 opacity-80" />
+                      <IconComponent size={48} className="text-gray-800 " />
                     </div>
 
                     {/* Content */}
                     <div className="text-center">
-                      <h3 className="text-xl font-bold text-gray-800 mb-4 leading-tight">
+                      <h3 className="text-xl font-bold text-gray-800 mb-4 t">
                         {step.title}
                       </h3>
                       <p className="text-gray-800 text-opacity-90 leading-relaxed">
