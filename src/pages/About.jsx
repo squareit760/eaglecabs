@@ -120,7 +120,7 @@ export default function AboutPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-12">
             Why Choose  <span className="text-yellow-500">EagleCabs?</span>
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 overflow-hidden">
             {features.map((feature, index) => (
               <div
                 key={index}

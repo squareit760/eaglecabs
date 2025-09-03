@@ -432,15 +432,15 @@ export default function ServicesPage() {
             {advantages.map((advantage, index) => (
               <div
                 key={index}
-                className="bg-white cursor-pointer rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-all"
+                className="bg-gray-800 cursor-pointer rounded-xl p-8 text-center shadow-lg text-white hover:bg-white hover:text-black transition-all"
               >
-                <div className="text-gray-800 mb-6 flex justify-center">
+                <div className=" mb-6 flex justify-center">
                   {advantage.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                <h3 className="text-xl font-bold mb-4">
                   {advantage.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="leading-relaxed">
                   {advantage.description}
                 </p>
               </div>

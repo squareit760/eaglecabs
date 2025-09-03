@@ -7,32 +7,32 @@ export default function OurCarsWork() {
       title: "SELECT PLACE & DATE",
       description: "Choose your pickup location and travel date for your ride.",
       icon: MapPin,
-      bgColor: "bg-white",
-      textColor: "text-gray-800"
+      bgColor: "bg-gray-800",
+      textColor: "text-white text-sm"
     },
     {
       id: "02", 
       title: "CHOOSE YOUR CAR",
       description: "Select the car type that best suits your travel needs.",
       icon: Car,
-      bgColor: "bg-white",
-      textColor: "text-gray-800"
+     bgColor: "bg-gray-800",
+      textColor: "text-white text-sm"
     },
     {
       id: "03",
       title: "PAYMENT & RECIEVE",
       description: "Make payment securely and receive confirmation for your cab booking.",
       icon: CreditCard,
-      bgColor: "bg-white",
-      textColor: "text-gray-800"
+      bgColor: "bg-gray-800 ",
+      textColor: "text-white text-sm"
     },
     {
       id: "04",
       title: "ENJOY YOUR TRIP",
       description: "Relax and enjoy a comfortable ride with MD Travels reliable.",
       icon: Coffee,
-      bgColor: "bg-white",
-      textColor: "text-gray-800"
+      bgColor: "bg-gray-800",
+      textColor: "text-white text-sm"
     }
   ];
 
@@ -67,15 +67,15 @@ export default function OurCarsWork() {
 
                     {/* Icon */}
                     <div className="flex justify-center mb-6">
-                      <IconComponent size={48} className="text-gray-800 " />
+                      <IconComponent size={48} className={`${step.textColor}`} />
                     </div>
 
                     {/* Content */}
                     <div className="text-center">
-                      <h3 className="text-xl font-bold text-gray-800 mb-4 t">
+                      <h3 className={`text-md font-semibold text-white mb-4`}>
                         {step.title}
                       </h3>
-                      <p className="text-gray-800 text-opacity-90 leading-relaxed">
+                      <p className={`text-opacity-90 leading-relaxed ${step.textColor}`}>
                         {step.description}
                       </p>
                     </div>

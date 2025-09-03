@@ -36,20 +36,28 @@ const ContactUs = () => {
   return (
     <div className="bg-white">
       {/* Banner */}
-      
-      <div
-        className="relative bg-cover bg-center h-64 md:h-130 flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/contact.jpg')" }}
-      >
 
-        <div className="flex flex-col" >
-        <p className="text-xl sm:text-2xl mb-2 font-semibold" >Let's talk</p>
-        <h1 className="relative text-3xl md:text-5xl font-bold text-yellow-500 drop-shadow-lg">
-          Contact <span className="text-white"> Us </span>
-        </h1>
+      <div className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
+        <img 
+          src="/images/contact.jpg" 
+          alt="EagleCabs - Professional Transportation Services"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center text-white">
+               <p className="text-lg sm:text-2xl mb-2 text-white">
+                Let's Talk
+              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-yellow-300">
+                Contact <span className="text-white"> Us </span>
+              </h1>
+            </div>
+          </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80 "></div>
       </div>
+      
 
       {/* Contact Section */}
       <section className="py-16 px-6 md:px-12 lg:px-20">

@@ -96,7 +96,7 @@ export default function VehiclePricingTable() {
         <table className="w-full border-collapse">
           {/* Table Header */}
           <thead>
-            <tr className="bg-blue-900 text-white">
+            <tr className="bg-gray-800 text-white">
               {headers.map((header, index) => (
                 <th 
                   key={index}
@@ -194,7 +194,7 @@ export default function VehiclePricingTable() {
           <table className="w-full border-collapse">
             {/* Table Header */}
             <thead>
-              <tr className="bg-blue-900 text-white">
+              <tr className="bg-gray-800 text-white">
                 {travellerHeaders.map((header, index) => (
                   <th 
                     key={index}
