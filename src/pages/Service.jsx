@@ -494,23 +494,23 @@ export default function ServicesPage() {
       <BookingConditions />
 
       {/* Contact CTA */}
-      <div className="bg-gray-800 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
             Ready to Experience the EagleCabs Difference?
           </h2>
-          <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 mb-8 max-w-2xl mx-auto">
             Book your ride today and discover why thousands of customers trust
             us for their transportation needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-gray-800">
               <Phone className="h-5 w-5" />
               <a href="tel:918881059997">
                 <span className="text-lg">+91 88810 59997</span>
               </a>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-gray-800">
               <Mail className="h-5 w-5" />
               <a href="mailto:greeneaglecabs@gmail.com">
                 <span className="text-lg">greeneaglecabs@gmail.com</span>
