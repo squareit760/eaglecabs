@@ -277,16 +277,12 @@ export default function ServicesPage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center text-white">
+              <p className="lg:text-xl text-md mb-2 text-white">
+               PRICING
+              </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
                 Our <span className="text-yellow-400">Services</span>
               </h1>
-              <p className="lg:text-xl text-md mb-8 text-white">
-                Your trusted transportation partner since 2014
-              </p>
-              <p className="lg:text-lg text-md text-white max-w-2xl mx-auto">
-                We soar above the competition to deliver safe, reliable, and
-                comfortable rides across the city and beyond.
-              </p>
             </div>
           </div>
         </div>

@@ -55,15 +55,12 @@ export default function AboutPage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center text-white">
+               <p className="text-lg sm:text-2xl mb-2 text-white">
+                Who We Are
+              </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
                 About <span className="text-yellow-400">EagleCabs</span>
               </h1>
-              <p className="text-lg sm:text-2xl mb-8 text-blue-100">
-                Your trusted transportation partner since 2014
-              </p>
-              <p className="text-md text-blue-200 max-w-2xl mx-auto">
-                We soar above the competition to deliver safe, reliable, and comfortable rides across the city and beyond.
-              </p>
             </div>
           </div>
         </div>

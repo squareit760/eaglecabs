@@ -1,6 +1,6 @@
 // src/pages/ContactUs.jsx
 import React, { useState } from "react";
-import { database } from "../firebase"; 
+import { database } from "../firebase";
 import { ref, push } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 
@@ -25,9 +25,9 @@ const ContactUs = () => {
         ...form,
         timestamp: Date.now(),
       });
-     
+
       setForm({ name: "", email: "", mobile: "", message: "" });
-      navigate("/thanks")
+      navigate("/thanks");
     } catch (error) {
       console.error("Error submitting message:", error);
     }
@@ -36,14 +36,19 @@ const ContactUs = () => {
   return (
     <div className="bg-white">
       {/* Banner */}
+      
       <div
         className="relative bg-cover bg-center h-64 md:h-130 flex items-center justify-center"
         style={{ backgroundImage: "url('/images/contact.jpg')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80"></div>
+
+        <div className="flex flex-col" >
+        <p className="text-xl sm:text-2xl mb-2 font-semibold" >Let's talk</p>
         <h1 className="relative text-3xl md:text-5xl font-bold text-yellow-500 drop-shadow-lg">
           Contact <span className="text-white"> Us </span>
         </h1>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-blue-gray/70 to-blue-gray/80 "></div>
       </div>
 
       {/* Contact Section */}
@@ -114,10 +119,14 @@ const ContactUs = () => {
                   📞 <span className="font-semibold">+91 88810 59997</span>
                 </p>
                 <p className="text-gray-700">
-                  ✉️ <span className="font-semibold">greeneaglecabs@gmail.com</span>
+                  ✉️{" "}
+                  <span className="font-semibold">
+                    greeneaglecabs@gmail.com
+                  </span>
                 </p>
                 <p className="text-gray-700">
-                  📍 Shop No.225, Sector-D, 2, Shopping Square Rd, Golf City, Bagiamau, Lucknow, Uttar Pradesh 226030
+                  📍 Shop No.225, Sector-D, 2, Shopping Square Rd, Golf City,
+                  Bagiamau, Lucknow, Uttar Pradesh 226030
                 </p>
               </div>
             </div>
