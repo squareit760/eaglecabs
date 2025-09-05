@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import banner from "/images/banner4.jpg";
 import banner1 from "/images/crysta_banner.png";
-import banner2 from "/images/hycross_banner.png";
+// import banner2 from "/images/hycross_banner.png";
 import banner3 from "/images/wedding_car_banner.png";
 import { database } from "../firebase";
 import { ref, push } from "firebase/database";
@@ -24,11 +24,11 @@ const Hero = () => {
       title: "Luxury Innova Crysta at Your Doorstep",
       subtitle: "Experience comfort & premium travel with EagleCabs.",
     },
-    {
-      img: banner2,
-      title: "Toyota Hycross for Long Rides",
-      subtitle: "Spacious, fuel-efficient, and perfect for family trips.",
-    },
+    // {
+    //   img: banner2,
+    //   title: "Toyota Hycross for Long Rides",
+    //   subtitle: "Spacious, fuel-efficient, and perfect for family trips.",
+    // },
     {
       img: banner3,
       title: "Wedding Car Rentals",
