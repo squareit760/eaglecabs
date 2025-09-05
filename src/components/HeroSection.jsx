@@ -115,7 +115,7 @@ const Hero = () => {
         }
         max-w-3xl p-4 sm:p-6 md:p-8 rounded-2xl
         ${index === 0 
-          ? "md:ml-auto md:text-right"   // ✅ only first banner → right side
+          ? "md:ml-auto md:text-center"   // ✅ only first banner → right side
           : "md:mx-auto md:text-center"  // ✅ others stay centered
         }`}
     >
