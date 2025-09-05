@@ -25,6 +25,11 @@ const OurCars = () => {
       img: "/images/HYUNDAIAURA.png",
     },
     {
+      name: "Vintage Wedding Car",
+      desc: "Perfect Weddings.",
+      img: "/images/wedding_car.png",
+    },
+    {
       name: "AUDI A4",
       desc: "Perfect for group tours and long journeys.",
       img: "/images/AUDIA4.png",
@@ -39,6 +44,7 @@ const OurCars = () => {
       desc: "Perfect for group tours and long journeys.",
       img: "/images/TOYOTA.png",
     },
+    
     {
       name: "TOYOTA INNOVA CRYSTA",
       desc: "Perfect for group tours and long journeys.",
@@ -54,6 +60,7 @@ const OurCars = () => {
       desc: "Perfect for group tours and long journeys.",
       img: "/images/Tempo.jpg",
     },
+     
   ];
 
   return (

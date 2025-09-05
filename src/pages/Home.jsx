@@ -36,9 +36,9 @@ const Home = () => {
       img: "/images/HYUNDAIAURA.png",
     },
     {
-      name: "AUDI A4",
-      desc: "Perfect for group tours and long journeys.",
-      img: "/images/AUDIA4.png",
+      name: "Vintage Wedding Car",
+      desc: "Perfect Weddings.",
+      img: "/images/wedding_car.png",
     },
     {
       name: "MERCEDES C CLASS",

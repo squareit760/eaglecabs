@@ -18,7 +18,7 @@ const MainLayout = () => {
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
         {/* Call Button */}
         <a
-          href="tel:+919559102222" // Replace with your phone number
+          href="tel:+918881059997" // Replace with your phone number
           className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center transition duration-300"
         >
           <FaPhoneAlt className="w-5 h-5" />
@@ -26,7 +26,7 @@ const MainLayout = () => {
         
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/919559102222" // Replace with your WhatsApp number
+          href="https://wa.me/+918881059997" // Replace with your WhatsApp number
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center transition duration-300"

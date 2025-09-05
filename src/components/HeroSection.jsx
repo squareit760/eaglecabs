@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import banner from "/images/banner.jpg";
-import banner1 from "/images/banner1.jpg";
-import banner2 from "/images/banner2.jpg";
-import banner3 from "/images/banner3.jpg";
+import banner from "/images/banner4.jpg";
+import banner1 from "/images/crysta_banner.png";
+import banner2 from "/images/hycross_banner.png";
+import banner3 from "/images/wedding_car_banner.png";
 import { database } from "../firebase";
 import { ref, push } from "firebase/database";
 import { useNavigate } from "react-router-dom";
@@ -13,13 +13,34 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
 
-  const banners = [banner, banner1, banner2, banner3];
+  const banners = [
+    {
+      img: banner,
+      title: "Book Your Ride Anytime, Anywhere",
+      subtitle: "Reliable, Affordable, and 24/7 available cabs at your service.",
+    },
+    {
+      img: banner1,
+      title: "Luxury Innova Crysta at Your Doorstep",
+      subtitle: "Experience comfort & premium travel with EagleCabs.",
+    },
+    {
+      img: banner2,
+      title: "Toyota Hycross for Long Rides",
+      subtitle: "Spacious, fuel-efficient, and perfect for family trips.",
+    },
+    {
+      img: banner3,
+      title: "Wedding Car Rentals",
+      subtitle: "Make your special day memorable with our premium rides.",
+    },
+  ];
 
   // Auto slider effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % banners.length);
-    }, 4000); // slide every 4s
+    }, 4000);
     return () => clearInterval(interval);
   }, [banners.length]);
 
@@ -64,11 +85,11 @@ const Hero = () => {
   return (
     <>
       {/* Banner Slider */}
-      <div className="relative min-h-screen sm:h-[400px] md:h-[90vh] lg:h-[90vh] overflow-hidden">
-        {banners.map((img, index) => (
+      <div className="relative min-h-[60vh] sm:h-[400px] md:h-[90vh] lg:h-[90vh] overflow-hidden">
+        {banners.map((banner, index) => (
           <img
             key={index}
-            src={img}
+            src={banner.img}
             alt={`Banner ${index}`}
             className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
@@ -79,18 +100,38 @@ const Hero = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-gray-900/80"></div>
 
-        {/* Banner Content */}
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-          <div>
-            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg text-white">
-              Book Your Ride Anytime, Anywhere with{" "}
-              <span className="text-yellow-400">EagleCabs</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-white">
-              Reliable, Affordable, and 24/7 available cabs at your service.
-            </p>
-          </div>
-        </div>
+
+{/* Banner Content */}
+<div className="absolute inset-0 flex items-center px-4 sm:px-8 md:px-16 overflow-hidden">
+  {banners.map((banner, index) => (
+    <div
+      key={index}
+      className={`absolute transition-all duration-1000 ease-in-out
+        ${index === currentSlide 
+          ? "opacity-100 translate-x-0" 
+          : index < currentSlide 
+            ? "opacity-0 -translate-x-full"   // slide out left
+            : "opacity-0 translate-x-full"    // slide out right
+        }
+        max-w-3xl p-4 sm:p-6 md:p-8 rounded-2xl
+        ${index === 0 
+          ? "md:ml-auto md:text-right"   // ✅ only first banner → right side
+          : "md:mx-auto md:text-center"  // ✅ others stay centered
+        }`}
+    >
+      <h1 className="text-yellow-400 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 leading-snug drop-shadow-lg">
+        {banner.title}
+      </h1>
+      <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl opacity-90 drop-shadow-md">
+        {banner.subtitle}
+      </p>
+    </div>
+  ))}
+</div>
+
+
+
+
 
         {/* Slider Dots */}
         <div className="absolute bottom-3 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 sm:space-x-3">
@@ -107,10 +148,10 @@ const Hero = () => {
       </div>
 
       {/* Booking Form */}
-      <div className="flex justify-center mt-2 px-4 bg-none">
+      <div className="flex justify-center mt-4 px-4">
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-4xl flex flex-col sm:flex-row gap-4  p-6 text-gray-800"
+          className="w-full max-w-4xl flex flex-col sm:flex-row gap-4 bg-white/90 p-6 rounded-lg shadow-md"
         >
           <input
             type="text"
