@@ -15,7 +15,7 @@ const Footer = () => {
         
         {/* Logo + About */}
         <div>
-          <img src="/images/logo.png" alt="Logo" className="h-16 mb-4" />
+          <img src="/images/logo.jpg" alt="Logo" className="h-22 w-22 mb-4" />
           <p className="text-md leading-6">
             EagleCabs provides safe, reliable, and affordable cab services across multiple locations with 24/7 support. Your journey is our priority.
           </p>

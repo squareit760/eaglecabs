@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icons for mobile menu
-import logo from "/images/logo.png"; // ✅ Import your logo
+import logo from "/images/logo.jpg"; // ✅ Import your logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,8 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="EagleCabs Logo" className="h-10 lg:w-auto w-[8vw]" /> 
-          <span className="font-extrabold text-xl text-[#0B2545]">EAGLECABS</span>
+          <img src={logo} alt="EagleCabs Logo" className="h-[12vh] object-cover lg:w-[10vw] w-[8vw]" /> 
+          {/* <span className="font-extrabold text-xl text-[#0B2545]">EAGLECABS</span> */}
         </div>
 
         {/* Desktop Menu */}
